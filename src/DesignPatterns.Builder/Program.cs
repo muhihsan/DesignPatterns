@@ -1,12 +1,14 @@
-﻿namespace DecoratorAndBuilderPatterns
+﻿using DesignPatterns.Decorator;
+
+namespace DesignPatterns.Builder
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             var vehicle =
                 VehicleBuilder.CreateVehicleBuilder()
-                .WithLogging(new Logger())
+                .WithLogging(new ConsoleLogger())
                 .WithValidator(new Validator())
                 .CreateVehicle();
 

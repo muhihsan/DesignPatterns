@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DecoratorAndBuilderPatterns
+namespace DesignPatterns.Decorator
 {
     public class Vehicle : IVehicle
     {
