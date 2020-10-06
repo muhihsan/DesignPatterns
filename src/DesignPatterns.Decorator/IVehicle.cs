@@ -1,4 +1,4 @@
-﻿namespace DecoratorAndBuilderPatterns
+﻿namespace DesignPatterns.Decorator
 {
     public interface IVehicle
     {

@@ -1,12 +1,14 @@
 ﻿using System;
+using DesignPatterns.Decorator;
 
-namespace DecoratorAndBuilderPatterns
+namespace DesignPatterns.Builder
 {
     public class VehicleBuilder
     {
+        private readonly bool _isLoggerAdded;
+        private readonly bool _isValidatorAdded;
+
         private IVehicle _vehicle;
-        private bool _isLoggerAdded;
-        private bool _isValidatorAdded;
 
         private VehicleBuilder()
         {
