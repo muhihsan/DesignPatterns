@@ -2,14 +2,9 @@
 
 namespace AbstractFactoryPattern
 {
-    public class Employee
+    public abstract class Employee
     {        
         private double Salary { get; set; }
-        public virtual double CalculateSalaryBy(int workedHours)
-        {
-            Salary = 1250.00;
-
-            return workedHours * Salary;
-        }
+        public abstract double CalculateSalaryBy(int workedHours);
     }
 }
